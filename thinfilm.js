@@ -16,9 +16,9 @@ var thinfilm = {
 };
 
 var math = require('mathjs');
-var PERMITTIVITY = 8.854157e-12;
-var PERMEABILITY = 4e-7 * Math.PI;
-var EM_CONSTANT = Math.sqrt(PERMITTIVITY*PERMEABILITY);
+thinfilm.PERMITTIVITY = 8.854157e-12;
+thinfilm.PERMEABILITY = 4e-7 * Math.PI;
+thinfilm.EM_CONSTANT = Math.sqrt(PERMITTIVITY*PERMEABILITY);
 
 // wavelength is measured in free space, in microns
 // angle measured in air -- if air is not the originating
@@ -52,7 +52,7 @@ thinfilm.getAngleInLayer = getAngleInLayer;
 
 function getGamma(source, layer){
   var angle = getAngleInLayer(source, layer);
-  return layer.index*EM_CONSTANT*Math.cos(angle);
+  return layer.index*thinfilm.EM_CONSTANT*Math.cos(angle);
 }
 thinfilm.getGamma = getGamma;
 

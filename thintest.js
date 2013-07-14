@@ -1,4 +1,4 @@
-var thinfilm = require('thinfilm');
+var thinfilm = require('./thinfilm.js');
 
 // Test Pedrotti, Section 19-2, Reflectance at Normal Incidence
 var source = new thinfilm.Source("Sodium", .5893, 0);
