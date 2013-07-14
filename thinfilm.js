@@ -18,7 +18,7 @@ var thinfilm = {
 var math = require('mathjs');
 thinfilm.PERMITTIVITY = 8.854157e-12;
 thinfilm.PERMEABILITY = 4e-7 * Math.PI;
-thinfilm.EM_CONSTANT = Math.sqrt(PERMITTIVITY*PERMEABILITY);
+thinfilm.EM_CONSTANT = Math.sqrt(thinfilm.PERMITTIVITY*thinfilm.PERMEABILITY);
 
 // wavelength is measured in free space, in microns
 // angle measured in air -- if air is not the originating
