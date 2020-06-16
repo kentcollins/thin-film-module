@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "dependencies": {
     "mathjs": "0.10.x",
-    "express": "3.1.x"
+    "express": "3.11.x"
   },
   "engines": {},
   "description": "thin-film-module ================ A node module for working with thin film optical layers and determining their reflectance.",
